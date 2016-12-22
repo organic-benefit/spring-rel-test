@@ -38,6 +38,6 @@ public class AuthAspect {
 	public void AfterThrowing(JoinPoint joinPoint, Exception exception) throws Exception {
 		System.out.println("afterThrowing");
 		System.out.println(exception);
-		throw new Exception("Error!!!!!", exception);
+		throw new Exception("Error!!!!", exception);
 	}
 }
