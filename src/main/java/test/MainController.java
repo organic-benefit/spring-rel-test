@@ -21,4 +21,16 @@ public class MainController {
 	public String main2() throws Exception {
 		return "testPage";
 	}
+
+	/**
+	 * Using Customized authorization annotation
+	 *
+	 * @return
+	 * @throws Exception
+	 */
+	@AuthorizeTo("ROLE_USER")
+	@RequestMapping("/user")
+	public String authorizeTo() {
+		return "testPage";
+	}
 }
